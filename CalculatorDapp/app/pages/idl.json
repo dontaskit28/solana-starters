@@ -1,0 +1,136 @@
+{
+  "version": "0.1.0",
+  "name": "calc",
+  "instructions": [
+    {
+      "name": "create",
+      "accounts": [
+        {
+          "name": "calculator",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "user",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "initMessage",
+          "type": "string"
+        }
+      ],
+      "returns": null
+    },
+    {
+      "name": "add",
+      "accounts": [
+        {
+          "name": "calculator",
+          "isMut": true,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "num1",
+          "type": "i32"
+        },
+        {
+          "name": "num2",
+          "type": "i32"
+        }
+      ],
+      "returns": null
+    },
+    {
+      "name": "multiply",
+      "accounts": [
+        {
+          "name": "calculator",
+          "isMut": true,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "num1",
+          "type": "i32"
+        },
+        {
+          "name": "num2",
+          "type": "i32"
+        }
+      ],
+      "returns": null
+    },
+    {
+      "name": "subtract",
+      "accounts": [
+        {
+          "name": "calculator",
+          "isMut": true,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "num1",
+          "type": "i32"
+        },
+        {
+          "name": "num2",
+          "type": "i32"
+        }
+      ],
+      "returns": null
+    },
+    {
+      "name": "divide",
+      "accounts": [
+        {
+          "name": "calculator",
+          "isMut": true,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "num1",
+          "type": "i32"
+        },
+        {
+          "name": "num2",
+          "type": "i32"
+        }
+      ],
+      "returns": null
+    }
+  ],
+  "accounts": [
+    {
+      "name": "Calculator",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "greeting",
+            "type": "string"
+          },
+          {
+            "name": "result",
+            "type": "i32"
+          }
+        ]
+      }
+    }
+  ],
+	"metadata":{"address":"3iAQAbtjS1pp7jtx2YjMPh2GcUSEu9WZ8nS9ZH6H3jzu"}
+}

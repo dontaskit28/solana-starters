@@ -1,0 +1,14 @@
+[features]
+seeds = false
+[programs.devnet]
+counterdapp = "2ioendBg2QXvKbwuyob649JtUDdK73ZeRj8hDPhgzSn1"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/dontaskit/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"

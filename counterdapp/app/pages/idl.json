@@ -1,0 +1,86 @@
+{
+  "version": "0.1.0",
+  "name": "counterdapp",
+  "instructions": [
+    {
+      "name": "create",
+      "accounts": [
+        {
+          "name": "baseAccount",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "user",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [],
+      "returns": null
+    },
+    {
+      "name": "increment",
+      "accounts": [
+        {
+          "name": "baseAccount",
+          "isMut": true,
+          "isSigner": false
+        }
+      ],
+      "args": [],
+      "returns": null
+    },
+    {
+      "name": "decrement",
+      "accounts": [
+        {
+          "name": "baseAccount",
+          "isMut": true,
+          "isSigner": false
+        }
+      ],
+      "args": [],
+      "returns": null
+    },
+    {
+      "name": "setting",
+      "accounts": [
+        {
+          "name": "baseAccount",
+          "isMut": true,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "count",
+          "type": "u64"
+        }
+      ],
+      "returns": null
+    }
+  ],
+  "accounts": [
+    {
+      "name": "BaseAccount",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "count",
+            "type": "u64"
+          }
+        ]
+      }
+    }
+  ],
+	"metadata":{
+	"address": "2ioendBg2QXvKbwuyob649JtUDdK73ZeRj8hDPhgzSn1"
+	}
+}
